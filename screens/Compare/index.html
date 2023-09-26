@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <script defer src="../../main.js"></script>
+</head>
+<body>
+
+    <!-- Navbar Start -->
+
+    <div class="w-full fixed top-0 bg-white z-40">
+        <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto py-6 flex justify-between items-center px-2 2xl:px-8 transition-all duration-300">
+            <img src="../../assets/images/courseoptionslogo 1.svg"/>
+            <div class="flex items-center gap-x-6">
+                <div class="flex items-center gap-x-6">
+                    <div class="flex items-center px-[10px] gap-x-[10px]">
+                        <img src="../../assets/images/discovery.svg"/> 
+                        <p class="font-semibold text-textBlackColor">Discover</p>
+                    </div>
+                    <div class="flex items-center px-[10px] gap-x-[10px]">
+                        <img src="../../assets/images/Decide.svg"/> 
+                        <p class="font-semibold text-textBlackColor">Compare</p>
+                    </div>
+                    <div class="flex items-center px-[10px] gap-x-[10px]">
+                        <img src="../../assets/images/Apply.svg"/> 
+                        <p class="font-semibold text-textBlackColor">Apply</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-x-6">
+                    <img src="../../assets/images/search.svg"/>
+                    <button class="py-[13px] px-[34px] gap-x-[6px] flex items-center rounded-[5px] bg-blueColor hover:bg-blue-600 text-white text-base font-medium">
+                        <img src="../../assets/images/Profile.svg"/>
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!-- Scholarship Section Start -->
+
+    <div class="w-full flex items-center justify-center mt-[100px] bg-profileBgColor py-20 relative mb-16">
+        <img class="absolute top-0 left-0" src="../../assets/images/Blogs/Frame 642.svg"/>
+        <div class="flex flex-col gap-y-12 items-center z-10">
+            <div class="flex flex-col justify-center items-center gap-y-1">
+                <p class="text-blueColor text-xl font-bold">Compare Courses</p>
+                <h1 class="text-mainTextColor text-[32px] font-extrabold">Compare Your Study Options</h1>
+                <p class="text-lg text-aboutUsTextColor">You can compare upto 3 Univeristies</p>
+            </div>
+            <div class="py-4 px-8 bg-white custom-shadow rounded-[10px]">
+                <div class="flex items-center gap-x-5">
+                    <button onclick="onShow(event)" class="py-[14px] px-[73px] rounded-[5px] bg-blueColor text-white font-semibold showModalBtn">Select Course1</button>
+                    <button onclick="onShow(event)" class="py-[14px] px-[73px] rounded-[5px] bg-blueColor text-white font-semibold showModalBtn">Select Course2</button>
+                    <button onclick="onShow(event)" class="py-[14px] px-[73px] rounded-[5px] bg-blueColor text-white font-semibold showModalBtn">Select Course3</button>
+                </div>
+            </div>
+        </div>
+        <img class="absolute bottom-0 right-0" src="../../assets/images/Blogs/Frame 643.svg"/>
+    </div>
+
+    <!-- Scholarship Section End -->
+
+    <!-- Modal Start -->
+
+    <div class="w-full hidden showModal">
+    <div class="backgroundBlack fixed top-0 h-[100vh] w-full z-40 flex items-center justify-center">
+        <div style="border: 3px solid #CCCCCC;" class="w-[40%] h-[100%] rounded-[10px] flex flex-col items-center px-10 py-[35px] bg-white modal">
+            <h1 class="text-mainTextColor font-bold text-[36px] mb-5">Select a Course</h1>
+            <div class="flex flex-col gap-y-6 mb-7 w-full">
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Country"/>
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Discipline"/>
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Degree-Level"/>
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Institute"/>
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Specialization"/>
+                <input class="py-[15px] pl-[25px] rounded-[10px] border border-grayColor outline-none font-semibold text-sm text-darkGrayColor" placeholder="Select Course"/>
+            </div>
+            <button class="w-full pt-4 pb-[15px] rounded-[10px] bg-blueColor text-white font-semibold">Send Message</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal End -->
+
+    <!-- About University Section Start -->
+
+    <div class="w-full pb-32">
+        <div class="max-w-[1120px] 2xl:max-w-[2400px] mx-auto px-2 2xl:px-8 transition-all duration-300">
+            <div class="rounded-[10px] w-full custom-shadow border-2 border-profileBgColor">
+                <div class="w-full rounded-[10px] rounded-b-none bg-blueColor pl-[35px] py-4">
+                    <h1 class="text-white text-xl font-bold leading-6">About University</h1>
+                </div>
+                <div class="w-full grid grid-cols-4 gap-5">
+                    <div class="flex flex-col">
+                        <div class="py-5 pl-[35px] bg-lightBlue border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Institute logo</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Institute Name</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Sector</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Established Year</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Country</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Location</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-r border-profileBgColor">
+                            <h1 class="font-bold text-mainTextColor">Campus</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="py-5 pl-[35px] border-x border-profileBgColor bg-lightBlue">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-white border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                        <div class="py-5 pl-[35px] bg-lightBlue border-x border-profileBgColor">
+                            <h1 class="font-bold text-grayColor">--</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About University Section End -->
+
+    <!-- Intrested Scholarship Section Start -->
+
+    <div class="w-full pb-[500px] 2xl:pb-[700px] flex flex-col items-center overflow-hidden">
+        <p class="text-[23px] font-bold text-blueColor mb-1">Scholarships</p>
+        <h1 class="text-textLightBlackColor text-[48px] font-extrabold mb-5 text-center">Scholarships you may be interested in</h1>
+        <div class="flex relative w-full 2xl:left-56">
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[-17.01px] 2xl:left-[-3.01px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 1.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">19 Scholarships in<br /> Belgium</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[231.93px] 2xl:left-[384.93px] top-[26.76px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                    <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 2.svg"/>
+                    <div class="h-full flex items-end px-5 pb-5">
+                        <h1 class="text-white text-xl font-black z-10">18 Scholarships in<br /> Austria</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[408.68px] 2xl:w-[515.68px] h-[403px] 2xl:h-[499px] absolute left-[515.74px] 2xl:left-[830.74px] z-30 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 3.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> Australia</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[854.68px] 2xl:left-[1309.11px] top-[26.76px] z-20 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 4.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">3439 Scholarships in<br /> Canada</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[1170.11px] 2xl:left-[1744.11px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 5.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> China</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intrested Scholarship Section End -->
+
+    <!-- Testimonal Section Start -->
+
+    <div class="bg-testimonalBgColor pt-8 pb-60">
+    <div class="relative pb-0">
+    <img class="absolute bottom-0 left-8" src="../../assets/images/Blogs/Ellipse 426.svg"/>
+    <div class="flex justify-between items-start max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 py-20 gap-x-16">
+        <div class="flex flex-col gap-y-2 z-10 relative">
+            <p class="font-bold text-[23px] text-blueColor">Testimonial</p>
+            <h1 style="line-height: 57.6px;" class="text-[40px] font-extrabold text-mainTextColor w-[340px] mb-2">See What OurClient Say’s</h1>
+            <p class="text-darkGrayColor text-sm w-[559px]">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+            <img class="absolute top-7 right-6" src="../../assets/images/Messages.svg"/>
+        </div>
+        <div class="flex flex-col items-center gap-y-7">
+        <div class="bg-white rounded-[10px] py-5 px-5 pr-6 flex flex-col gap-y-4 custom-shadow z-10">
+            <div class="flex gap-x-5">
+                <img src="../../assets/images/Blogs/testimoanlals.svg"/>
+                <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="font-bold text-xl text-mainTextColor">David Karry</h1>
+                        <p class="font-medium text-blueColor">Web Developer</p>
+                    </div>
+                    <img src="../../assets/images/Blogs/“.svg"/>
+                </div>
+            </div>
+            <p class="text-grayColor text-sm mb-1">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+            <div class="px-6 rotate-0 rounded-[10px] border-4 border-blueColor"></div>
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+        </div>
+    </div>
+    </div>
+    <img class="absolute right-0 top-0" src="../../assets/images/Blogs/Ellipse 427.svg"/>
+</div>
+</div>
+
+    <!-- Testimonal Section End -->
+
+    <!-- Footer Start -->
+
+    <div class="bg-footerBgColor w-full flex justify-center flex-col">
+        <div class="w-full">
+            <div class="mt-[-110px] relative max-w-[1100px] 2xl:max-w-[2280px] flex items-center mb-36 lg:mb-60 2xl:mb-[200px] transition-all duration-300 mx-auto">
+                <img class="rounded-[10px] w-full absolute top-0 left-0" src="../../assets/images/Frame 608.svg"/>
+                <div class="z-10 w-full flex items-center font-black px-20 pt-16 justify-between h-auto 2xl:h-[420px]">
+                    <h1 class="text-white text-4xl lg:text-5xl">Want to study at Online<br /> program ?</h1>
+                    <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    <div class="w-full pb-10">
+        <div class="max-w-[1180px] 2xl:max-w-[2300px] mx-auto px-2 flex justify-between">
+            <div class="flex flex-col w-[420px]">
+                <img class="w-[220px] h-[50px] mb-7" src="../../assets/images/courseoptionslogo 1.svg"/>
+                <p class="px-[14px] text-lightGrayColor mb-12">Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best.</p>
+                <div class="flex gap-x-5 items-center px-[14px]">
+                    <div class="h-10 w-10 rounded-[5px] bg-facebookBgColor flex items-center justify-center">
+                        <img src="../../assets/images/Facebook.svg"/>
+                    </div>
+                    <div class="h-10 w-10 rounded-[5px] bg-twitterBgColor flex items-center justify-center">
+                        <img src="../../assets/images/twitter.svg"/>
+                    </div>
+                    <div class="h-10 w-10 rounded-[5px] bg-telegramBgColor flex items-center justify-center">
+                        <img src="../../assets/images/telegram.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">STUDY ABROAD</h1>
+                <ul class="text-lightGrayColor">
+                    <li class="pt-[9px] pb-[10px]">Australia</li>
+                    <li class="pt-[9px] pb-[10px]">United Kingdom</li>
+                    <li class="pt-[9px] pb-[10px]">USA</li>
+                    <li class="pt-[9px] pb-[10px]">New Zealand</li>
+                    <li class="pt-[9px] pb-[10px]">Ireland</li>
+                    <li class="pt-[9px] pb-[10px]">Singapore</li>
+                    <li class="pt-[9px] pb-[10px]">View all</li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">QUICK LINKS</h1>
+                <ul class="text-lightGrayColor">
+                    <li class="pt-[9px] pb-[10px]">B2B - Promotional Campaign</li>
+                    <li class="pt-[9px] pb-[10px]">Agents CRM</li>
+                    <li class="pt-[9px] pb-[10px]">Find Consultants</li>
+                    <li class="pt-[9px] pb-[10px]">Find Institutions</li>
+                    <li class="pt-[9px] pb-[10px]">Find Courses</li>
+                    <li class="pt-[9px] pb-[10px]">Find Country</li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">SUPPORT</h1>
+                <ul class="text-lightGrayColor">
+                    <li class="pt-[9px] pb-[10px]">About Us</li>
+                    <li class="pt-[9px] pb-[10px]">Contact Us</li>
+                    <li class="pt-[9px] pb-[10px]">FAQ's</li>
+                    <li class="pt-[9px] pb-[10px]">Privacy Policy</li>
+                    <li class="pt-[9px] pb-[10px]">Terms and Condition</li>
+                    <a href="../Blog">
+                    <li class="pt-[9px] pb-[10px]">Blogs</li>
+                </a>
+                    <li class="pt-[9px] pb-[10px]">Book a Demo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="border border-borderColor py-8 w-full flex justify-center items-center">
+        <p class="text-lightGrayColor">Copyright © 2023 Educo. All Rights Reserved</p>
+    </div>
+    </div>
+
+    <!-- Footer End -->
+
+</body>
+</html>
