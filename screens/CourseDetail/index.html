@@ -16,18 +16,24 @@
             <img src="../../assets/images/courseoptionslogo 1.svg"/>
             <div class="flex items-center gap-x-6">
                 <div class="flex items-center gap-x-6">
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="../../assets/images/discovery.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Discover</p>
-                    </div>
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="../../assets/images/Decide.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Compare</p>
-                    </div>
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="../../assets/images/Apply.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Apply</p>
-                    </div>
+                    <a href="../FilterPage">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/discovery.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Discover</p>
+                        </div>
+                    </a>
+                    <a href="../Compare">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/Decide.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Compare</p>
+                        </div>
+                    </a>
+                    <a href="../Apply">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/Apply.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Apply</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <img src="../../assets/images/search.svg"/>
@@ -63,8 +69,8 @@
         </div>
     </div>
         <div class="bg-white absolute right-24 top-20 rounded-[10px] p-3 w-[25%] z-10 custom-shadow">
-            <div class="relative flex justify-center">
-                <img class="absolute top-0 left-0" src="../../assets/images/CourseDetail/Rectangle 1697.svg"/>
+            <div class="relative flex justify-center w-full h-[228px]">
+                <img class="absolute top-0 left-0 w-full h-[228px]" src="../../assets/images/CourseDetail/Rectangle 1697.svg"/>
                 <h1 class="text-center font-bold text-2xl text-white z-10 pt-32">Mississippi State University</h1>
             </div>
             <div class="px-3 pt-5">
@@ -74,8 +80,12 @@
                     Master of Science in forestry and Doctor of Philosophy
                     in forest resources.</p>
                 <p class="text-[11px] text-grayColor mb-8">Visit the <span class="text-blueColor font-bold">Visit university website</span> for more information</p>
+                <a href="../Apply">
                 <button class="w-full pt-[19px] pb-[18px] rounded-[5px] text-white text-lg font-semibold bg-blueColor hover:bg-blue-600 mb-4">Apply</button>
+                </a>
+                <a href="../Compare">
                 <button class="w-full pt-[19px] pb-[18px] rounded-[5px] hover:text-white text-lg font-semibold bg-white hover:bg-blueColor border border-blueColor text-blueColor mb-2">Compare</button>
+                </a>
             </div>
             <div class="px-3 pt-5 mb-5">
                 <h1 class="text-mainTextColor text-xl font-bold mb-6">Key information</h1>
@@ -147,14 +157,26 @@
     <!-- Main Content Section Start -->
 
     <div class="w-full pb-28">
-        <div class="max-w-[1163px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 pt-16 pr-[360px]">
-            <div class="w-full flex items-center gap-x-4 border-b-2 border-borderColor">
+        <div class="max-w-[1163px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 pt-16 pr-[360px] 2xl:pr-[700px]">
+            <div class="w-full flex items-center gap-x-4 border-b-2 border-borderColor mb-20">
                 <h1 class="py-[10px] border-b-2 border-blueColor font-medium text-blueColor">Overview</h1>
                 <h1 class="py-[10px] font-medium text-mainTextColor">Programme Structure</h1>
                 <h1 class="py-[10px] font-medium text-mainTextColor">Academic requirements</h1>
                 <h1 class="py-[10px] font-medium text-mainTextColor">Fees and funding</h1>
                 <h1 class="py-[10px] font-medium text-mainTextColor">Visa information</h1>
                 <h1 class="py-[10px] font-medium text-mainTextColor">Work permit</h1>
+            </div>
+            <div class="flex flex-col gap-y-6 mb-20">
+                <h1 class="font-semibold text-xl text-textLightBlackColor">Description</h1>
+                <p class="text-lightGrayColor">Within this <span class="text-blueColor">Forestry</span> MSc study from <span class="text-blueColor">Mississippi State University</span> , specialized areas of study include forest business, forest management and economics, forest genetics, forest hydrology and soils, silviculture, forest biometrics, forest photogrammetry and remote sensing, forest tree and seed physiology, forest harvesting and operations, and forest ecophysiology.</p>
+            </div>
+            <div class="flex flex-col gap-y-6 mb-20">
+                <h1 class="font-semibold text-xl text-textLightBlackColor">Key fact:</h1>
+                <p class="text-lightGrayColor">The department has an extensive research program within the MSU Forest and Wildlife Research Center. This program provides graduate students with a wide choice of problems for thesis or dissertation research supervised by an experienced faculty member.</p>
+            </div>
+            <div class="py-6 border-t-2 border-borderColor flex items-center justify-between w-full mb-20">
+                <h1 class="text-xl font-semibold text-textLightBlackColor">Get more details</h1>
+                <p class="text-blueColor">Visit university website</p>
             </div>
         </div>
     </div>
@@ -295,7 +317,9 @@
                 <img class="rounded-[10px] w-full absolute top-0 left-0" src="../../assets/images/Frame 608.svg"/>
                 <div class="z-10 w-full flex items-center font-black px-20 pt-16 justify-between h-auto 2xl:h-[420px]">
                     <h1 class="text-white text-4xl lg:text-5xl">Want to study at Online<br /> program ?</h1>
-                    <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
+                    <a href="../Apply">
+                        <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -334,22 +358,26 @@
                     <li class="pt-[9px] pb-[10px]">B2B - Promotional Campaign</li>
                     <li class="pt-[9px] pb-[10px]">Agents CRM</li>
                     <li class="pt-[9px] pb-[10px]">Find Consultants</li>
-                    <li class="pt-[9px] pb-[10px]">Find Institutions</li>
-                    <li class="pt-[9px] pb-[10px]">Find Courses</li>
-                    <li class="pt-[9px] pb-[10px]">Find Country</li>
+                    <a href="../Universities">
+                        <li class="pt-[9px] pb-[10px]">Find Institutions</li>
+                    </a>
+                    <a href="../Fields">
+                        <li class="pt-[9px] pb-[10px]">Find Courses</li>
+                    </a>
+                    <a href="../Countries">
+                        <li class="pt-[9px] pb-[10px]">Find Country</li>
+                    </a>
                 </ul>
             </div>
             <div class="flex flex-col">
                 <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">SUPPORT</h1>
                 <ul class="text-lightGrayColor">
-                    <li class="pt-[9px] pb-[10px]">About Us</li>
-                    <li class="pt-[9px] pb-[10px]">Contact Us</li>
-                    <li class="pt-[9px] pb-[10px]">FAQ's</li>
-                    <li class="pt-[9px] pb-[10px]">Privacy Policy</li>
-                    <li class="pt-[9px] pb-[10px]">Terms and Condition</li>
-                    <a href="../Blog">
-                    <li class="pt-[9px] pb-[10px]">Blogs</li>
-                </a>
+                    <a href="../AboutUs"><li class="pt-[9px] pb-[10px]">About Us</li></a>
+                    <a href="../"><li class="pt-[9px] pb-[10px]">Contact Us</li></a>
+                    <a href="../"><li class="pt-[9px] pb-[10px]">FAQ's</li></a>
+                    <a href="../PrivacyPolicy"><li class="pt-[9px] pb-[10px]">Privacy Policy</li></a>
+                    <a href="../T&C"><li class="pt-[9px] pb-[10px]">Terms and Condition</li></a>
+                    <a href="../Blog"><li class="pt-[9px] pb-[10px]">Blogs</li></a>
                     <li class="pt-[9px] pb-[10px]">Book a Demo</li>
                 </ul>
             </div>

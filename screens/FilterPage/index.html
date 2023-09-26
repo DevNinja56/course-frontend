@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <script defer src="../../main.js"></script>
+</head>
+<body>
+
+    <!-- Navbar Start -->
+
+    <div class="w-full fixed top-0 bg-white z-40">
+        <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto py-6 flex justify-between items-center px-2 2xl:px-8 transition-all duration-300">
+            <img src="../../assets/images/courseoptionslogo 1.svg"/>
+            <div class="flex items-center gap-x-6">
+                <div class="flex items-center gap-x-6">
+                    <a href="../FilterPage">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/discovery.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Discover</p>
+                        </div>
+                    </a>
+                    <a href="../Compare">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/Decide.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Compare</p>
+                        </div>
+                    </a>
+                    <a href="../Apply">
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="../../assets/images/Apply.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Apply</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex items-center gap-x-6">
+                    <img src="../../assets/images/search.svg"/>
+                    <button class="py-[13px] px-[34px] gap-x-[6px] flex items-center rounded-[5px] bg-blueColor hover:bg-blue-600 text-white text-base font-medium">
+                        <img src="../../assets/images/Profile.svg"/>
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!-- Scholarship Section Start -->
+
+    <div class="w-full flex items-center justify-center mt-[100px] bg-profileBgColor py-20 relative mb-10">
+        <img class="absolute top-0 left-0" src="../../assets/images/Blogs/Frame 642.svg"/>
+        <div class="flex flex-col gap-y-8 items-center z-10">
+            <div class="flex flex-col justify-center items-center gap-y-1">
+                <p class="text-darkGrayColor text-xl font-bold">Scholarship</p>
+                <h1 class="text-mainTextColor text-[26px] font-extrabold">Explore thousands of scholarships across the world</h1>
+            </div>
+            <div class="relative">
+                <div class="relative">
+                    <input class="custom-shadow rounded-[10px] py-5 pl-[52px] outline-none text-base text-mainTextColor pr-[520px]" placeholder="Type here"/>
+                    <img class="absolute top-[21px] left-6" src="../../assets/images/Scholarships/search.svg"/>
+                </div>
+                <button class="py-[11px] px-[39px] absolute right-3 top-[11px] bg-blueColor rounded-[5px] text-white text-sm">Search</button>
+            </div>
+        </div>
+        <img class="absolute bottom-0 right-0" src="../../assets/images/Blogs/Frame 643.svg"/>
+    </div>
+
+    <!-- Scholarship Section End -->
+
+    <!-- Filters Section Start -->
+
+    <div class="w-full pb-28">
+        <div class="max-w-[1200px] 2xl:max-w-[2400px] mx-auto px-2 2xl:px-8 transition-all duration-300 flex justify-between">
+            <div style="border: 3px solid #eaf2ff;" class="rounded-[15px] w-[24%] py-4 pb-5 h-fit">
+                <div class="flex justify-between items-center mb-8 px-4">
+                    <h1 class="text-[23px] text-mainTextColor font-bold">Filters</h1>
+                    <P class="text-sm text-darkGrayColor">Reset All</P>
+                </div>
+                <div class="flex flex-col gap-y-6">
+                    <div class="flex flex-col gap-y-3">
+                        <div class="flex justify-between items-center px-4">
+                            <h1 class="text-lg text-darkGrayColor font-medium">Countries</h1>
+                            <img src="../../assets/images/Scholarships/Group 7678.svg"/>
+                        </div>
+                        <div class="flex flex-col gap-y-1 h-[360px] overflow-hidden overflow-y-auto setScrollBar">
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Australia (918)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Austria (18)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">China (29)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Denmark (3)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Hungary (9)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Austria (18)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                    <hr class="border border-borderColor"/>
+                </div>
+                <div class="flex flex-col gap-y-3">
+                    <h1 class="text-lg text-darkGrayColor font-medium px-4">Degree Level</h1>
+                    <div class="flex flex-col gap-y-1">
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
+                            <div class="flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Undergradute (644)</p>
+                        </div>
+                        <img src="../../assets/images/Scholarships/chevron-right.svg"/>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Bachelors (605)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Top Up Degree (0)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Associate Degree (1)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Advanced Diploma (0)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Higher National Diploma (0)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Diploma (30)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Certificate (2)</p>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
+                            <div class="flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Postgradute (528)</p>
+                        </div>
+                        <img src="../../assets/images/Scholarships/chevron-right.svg"/>
+                        </div>
+                        <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
+                            <div class="flex gap-x-2">
+                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Postgradute by Research (170)</p>
+                        </div>
+                        <img src="../../assets/images/Scholarships/chevron-right.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <hr class="border border-borderColor"/>
+                </div>
+                    <div class="flex flex-col gap-y-3">
+                        <div class="flex justify-between items-center px-4">
+                            <h1 class="text-lg text-darkGrayColor font-medium">Disciplines</h1>
+                            <img src="../../assets/images/Scholarships/Group 7678.svg"/>
+                        </div>
+                        <div class="flex flex-col gap-y-1 h-[360px] overflow-hidden overflow-y-auto setScrollBar">
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Tourism & Hospitality (418)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Architecture (406)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Social & Behavioural Science (440)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Law (448)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Health & Medicine (470)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Physical Science & Math (485)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Life Sciences (504)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Engineering & Technology (514)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Business & Management (519)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <hr class="border border-borderColor"/>
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <div class="flex justify-between items-center px-4">
+                            <h1 class="text-lg text-darkGrayColor font-medium">Scholarship Type</h1>
+                            <img src="../../assets/images/Scholarships/Group 7678.svg"/>
+                        </div>
+                        <div class="flex flex-col gap-y-1">
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Sports (1)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Organisational (9)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Merit (81)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Entrance (32)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Need (19)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Government (47)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">Academic (729)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <hr class="border border-borderColor"/>
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <div class="flex justify-between items-center px-4">
+                            <h1 class="text-lg text-darkGrayColor font-medium">Scholarship Type</h1>
+                            <img src="../../assets/images/Scholarships/Group 7678.svg"/>
+                        </div>
+                        <div class="flex flex-col gap-y-1">
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">January (24)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">February (11)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">March (44)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">April (33)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">May (56)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">June (42)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">July (54)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <hr class="border border-borderColor"/>
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <div class="flex justify-between items-center px-4">
+                            <h1 class="text-lg text-darkGrayColor font-medium">Scholarship Year</h1>
+                            <img src="../../assets/images/Scholarships/Group 7678.svg"/>
+                        </div>
+                        <div class="flex flex-col gap-y-1">
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">2023 (206)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">2024 (9)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">2030 (2)</p>
+                            </div>
+                            <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
+                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <p class="text-sm text-grayColor group-hover:text-blueColor">2022 (44)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-7 w-[73%]">
+            <div class="flex flex-col gap-y-4">
+                    <div class="w-full flex items-center justify-between">
+                <h1 class="font-bold text-[23px] text-mainTextColor">2521 Results Found</h1>
+                <div class="flex items-center gap-x-4">
+                    <p class="text-grayColor">Sort by:</p>
+                    <div class="relative group">
+                    <button class="py-2 px-4 rounded-[5px] border-2 border-scholarshipBorderColor flex items-center gap-x-[6px] text-sm text-darkGrayColor">Select Option <img src="../../assets/images/Scholarships/chevron-down.svg"/></button>
+                    <div class="absolute top-12 left-0 w-full py-4 custom-shadow rounded-[10px] flex-col bg-white hidden group-hover:flex z-20">
+                        <div class="flex items-center gap-x-1 hover:bg-profileBgColor p-3 text-grayColor hover:text-blueColor cursor-pointer">
+                            <img src="../../assets/images/Scholarships/Transfer Vertical.svg"/>
+                            <p class="z-10">A-Z</p>
+                        </div>
+                        <div class="flex items-center gap-x-1 hover:bg-profileBgColor p-3 text-grayColor hover:text-blueColor cursor-pointer">
+                            <img src="../../assets/images/Scholarships/Transfer Vertical.svg"/>
+                            <p class="z-10">Z-A</p>
+                        </div>
+                        <div class="flex items-center gap-x-1 hover:bg-profileBgColor p-3 text-grayColor hover:text-blueColor cursor-pointer group">
+                            <img src="../../assets/images/Scholarships/Sort From Bottom To Top.svg"/>
+                            <p class="z-10">Duration</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 20V4M12 4L18 10M12 4L6 10" class="stroke-mainTextColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="flex items-center gap-x-1 hover:bg-profileBgColor p-3 text-grayColor hover:text-blueColor cursor-pointer group">
+                            <img src="../../assets/images/Scholarships/Sort From Top To Bottom.svg"/>
+                            <p class="z-10">Duration</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4V20M12 20L18 14M12 20L6 14" class="stroke-mainTextColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <hr class="border border-scholarshipBorderColor"/>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-3">
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Clarendon Fund Scholarships
+                            at University of Oxford</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 2.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Fully-Funded Rotary Peace 
+                            Fellowships</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 3.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Sport Liverpool Scholarships</h1>
+                        <div class="flex flex-col gap-y-3 mb-11">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Clarendon Fund Scholarships
+                            at University of Oxford</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 2.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Fully-Funded Rotary Peace 
+                            Fellowships</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 3.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Sport Liverpool Scholarships</h1>
+                        <div class="flex flex-col gap-y-3 mb-11">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Clarendon Fund Scholarships
+                            at University of Oxford</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 2.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Fully-Funded Rotary Peace 
+                            Fellowships</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 3.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Sport Liverpool Scholarships</h1>
+                        <div class="flex flex-col gap-y-3 mb-11">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Clarendon Fund Scholarships
+                            at University of Oxford</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 2.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Fully-Funded Rotary Peace 
+                            Fellowships</h1>
+                        <div class="flex flex-col gap-y-3 mb-5">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+                </a>
+                <a href="../CourseDetail">
+                <div class="border-2 border-scholarshipBorderColor rounded-[10px] p-3 flex flex-col gap-y-5 w-[100%] group cursor-pointer hover:border-blueColor">
+                    <div class="relative w-full">
+                        <img class="w-full" src="../../assets/images/FilterPage/Rectangle 3634 3.svg"/>
+                        <button class="h-[36px] w-[36px] rounded-full flex items-center justify-center group absolute top-4 right-3 z-10 bg-black opacity-[0.4]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76953 9.3571C2.76953 13.8459 6.47978 16.238 9.19575 18.3791C10.1541 19.1346 11.0772 19.8459 12.0003 19.8459C12.9234 19.8459 13.8465 19.1346 14.8049 18.3791C17.5209 16.238 21.2311 13.8459 21.2311 9.3571C21.2311 4.86823 16.154 1.68482 12.0003 6.00036C7.8466 1.68482 2.76953 4.86823 2.76953 9.3571Z" class="fill-white"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[17px] text-textLightBlackColor mb-4 group-hover:text-blueColor">Sport Liverpool Scholarships</h1>
+                        <div class="flex flex-col gap-y-3 mb-11">
+                            <p class="text-sm text-darkGrayColor">Oxford University Press Masters/PhD 
+                                Degrees
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Study in: UK
+                            </p>
+                            <p class="text-sm text-darkGrayColor">Course starts October 2024
+                            </p>
+                            <p class="font-medium text-sm text-darkGrayColor"><span class="font-bold text-mainTextColor group-hover:text-blueColor">Deadline:</span> 5 Jan/19 Jan 2024 (annual)</p>
+                        </div>
+                        <button class="w-full py-[9px] rounded-[5px] text-blueColor border border-blueColor mb-3 group-hover:bg-blueColor group-hover:text-white">View Details</button>
+                    </div>
+                </div>
+            </a></div>
+            <div class="w-full flex justify-center">
+                <div class="flex items-center gap-x-6">
+                    <button class="h-[39px] w-[39px] rounded-full bg-profileBgColor flex items-center justify-center">
+                        <img src="../../assets/images/Scholarships/Vector2.svg"/>
+                    </button>                    
+                    <p class="font-medium text-darkGrayColor">1</p>
+                    <p class="font-medium border-b border-blueColor text-blueColor">2</p>
+                    <p class="font-medium text-darkGrayColor">3</p>
+                    <p class="font-medium text-darkGrayColor">---</p>
+                    <p class="font-medium text-darkGrayColor">67</p>
+                    <button class="h-[39px] w-[39px] rounded-full bg-profileBgColor flex items-center justify-center">
+                        <img src="../../assets/images/Scholarships/Vector.svg"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Filters Section End -->
+
+    <!-- Intrested Scholarship Section Start -->
+
+    <div class="w-full pb-[500px] 2xl:pb-[700px] flex flex-col items-center overflow-hidden">
+        <p class="text-[23px] font-bold text-blueColor mb-1">Scholarships</p>
+        <h1 class="text-textLightBlackColor text-[48px] font-extrabold mb-5 text-center">Scholarships you may be interested in</h1>
+        <div class="flex relative w-full 2xl:left-56">
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[-17.01px] 2xl:left-[-3.01px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 1.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">19 Scholarships in<br /> Belgium</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[231.93px] 2xl:left-[384.93px] top-[26.76px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                    <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 2.svg"/>
+                    <div class="h-full flex items-end px-5 pb-5">
+                        <h1 class="text-white text-xl font-black z-10">18 Scholarships in<br /> Austria</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[408.68px] 2xl:w-[515.68px] h-[403px] 2xl:h-[499px] absolute left-[515.74px] 2xl:left-[830.74px] z-30 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 3.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> Australia</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[854.68px] 2xl:left-[1309.11px] top-[26.76px] z-20 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 4.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">3439 Scholarships in<br /> Canada</h1>
+                </div>
+            </div>
+            </div>
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[1170.11px] 2xl:left-[1744.11px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="../../assets/images/Scholarships/Pic 5.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> China</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intrested Scholarship Section End -->
+
+    <!-- Testimonal Section Start -->
+
+    <div class="bg-testimonalBgColor pt-8 pb-60">
+    <div class="relative pb-0">
+    <img class="absolute bottom-0 left-8" src="../../assets/images/Blogs/Ellipse 426.svg"/>
+    <div class="flex justify-between items-start max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 py-20 gap-x-16">
+        <div class="flex flex-col gap-y-2 z-10 relative">
+            <p class="font-bold text-[23px] text-blueColor">Testimonial</p>
+            <h1 style="line-height: 57.6px;" class="text-[40px] font-extrabold text-mainTextColor w-[340px] mb-2">See What OurClient Say’s</h1>
+            <p class="text-darkGrayColor text-sm w-[559px]">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+            <img class="absolute top-7 right-6" src="../../assets/images/Messages.svg"/>
+        </div>
+        <div class="flex flex-col items-center gap-y-7">
+        <div class="bg-white rounded-[10px] py-5 px-5 pr-6 flex flex-col gap-y-4 custom-shadow z-10">
+            <div class="flex gap-x-5">
+                <img src="../../assets/images/Blogs/testimoanlals.svg"/>
+                <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="font-bold text-xl text-mainTextColor">David Karry</h1>
+                        <p class="font-medium text-blueColor">Web Developer</p>
+                    </div>
+                    <img src="../../assets/images/Blogs/“.svg"/>
+                </div>
+            </div>
+            <p class="text-grayColor text-sm mb-1">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+            <div class="px-6 rotate-0 rounded-[10px] border-4 border-blueColor"></div>
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+        </div>
+    </div>
+    </div>
+    <img class="absolute right-0 top-0" src="../../assets/images/Blogs/Ellipse 427.svg"/>
+</div>
+</div>
+
+    <!-- Testimonal Section End -->
+
+    <!-- Footer Start -->
+
+    <div class="bg-footerBgColor w-full flex justify-center flex-col">
+        <div class="w-full">
+            <div class="mt-[-110px] relative max-w-[1100px] 2xl:max-w-[2280px] flex items-center mb-36 lg:mb-60 2xl:mb-[200px] transition-all duration-300 mx-auto">
+                <img class="rounded-[10px] w-full absolute top-0 left-0" src="../../assets/images/Frame 608.svg"/>
+                <div class="z-10 w-full flex items-center font-black px-20 pt-16 justify-between h-auto 2xl:h-[420px]">
+                    <h1 class="text-white text-4xl lg:text-5xl">Want to study at Online<br /> program ?</h1>
+                    <a href="../Apply">
+                        <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <div class="w-full pb-10">
+        <div class="max-w-[1180px] 2xl:max-w-[2300px] mx-auto px-2 flex justify-between">
+            <div class="flex flex-col w-[420px]">
+                <img class="w-[220px] h-[50px] mb-7" src="../../assets/images/courseoptionslogo 1.svg"/>
+                <p class="px-[14px] text-lightGrayColor mb-12">Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best.</p>
+                <div class="flex gap-x-5 items-center px-[14px]">
+                    <div class="h-10 w-10 rounded-[5px] bg-facebookBgColor flex items-center justify-center">
+                        <img src="../../assets/images/Facebook.svg"/>
+                    </div>
+                    <div class="h-10 w-10 rounded-[5px] bg-twitterBgColor flex items-center justify-center">
+                        <img src="../../assets/images/twitter.svg"/>
+                    </div>
+                    <div class="h-10 w-10 rounded-[5px] bg-telegramBgColor flex items-center justify-center">
+                        <img src="../../assets/images/telegram.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">STUDY ABROAD</h1>
+                <ul class="text-lightGrayColor">
+                    <li class="pt-[9px] pb-[10px]">Australia</li>
+                    <li class="pt-[9px] pb-[10px]">United Kingdom</li>
+                    <li class="pt-[9px] pb-[10px]">USA</li>
+                    <li class="pt-[9px] pb-[10px]">New Zealand</li>
+                    <li class="pt-[9px] pb-[10px]">Ireland</li>
+                    <li class="pt-[9px] pb-[10px]">Singapore</li>
+                    <li class="pt-[9px] pb-[10px]">View all</li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">QUICK LINKS</h1>
+                <ul class="text-lightGrayColor">
+                    <li class="pt-[9px] pb-[10px]">B2B - Promotional Campaign</li>
+                    <li class="pt-[9px] pb-[10px]">Agents CRM</li>
+                    <li class="pt-[9px] pb-[10px]">Find Consultants</li>
+                    <a href="../Universities">
+                        <li class="pt-[9px] pb-[10px]">Find Institutions</li>
+                    </a>
+                    <a href="../Fields">
+                        <li class="pt-[9px] pb-[10px]">Find Courses</li>
+                    </a>
+                    <a href="../Countries">
+                        <li class="pt-[9px] pb-[10px]">Find Country</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">SUPPORT</h1>
+                <ul class="text-lightGrayColor">
+                    <a href="../AboutUs"><li class="pt-[9px] pb-[10px]">About Us</li></a>
+                    <a href="../"><li class="pt-[9px] pb-[10px]">Contact Us</li></a>
+                    <a href="../"><li class="pt-[9px] pb-[10px]">FAQ's</li></a>
+                    <a href="../PrivacyPolicy"><li class="pt-[9px] pb-[10px]">Privacy Policy</li></a>
+                    <a href="../T&C"><li class="pt-[9px] pb-[10px]">Terms and Condition</li></a>
+                    <a href="../Blog"><li class="pt-[9px] pb-[10px]">Blogs</li></a>
+                    <li class="pt-[9px] pb-[10px]">Book a Demo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="border border-borderColor py-8 w-full flex justify-center items-center">
+        <p class="text-lightGrayColor">Copyright © 2023 Educo. All Rights Reserved</p>
+    </div>
+    </div>
+
+    <!-- Footer End -->
+
+</body>
+</html>
