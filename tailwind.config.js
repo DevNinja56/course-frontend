@@ -32,6 +32,7 @@ module.exports = {
         purpleColor:"#9747FF",
         heartBgColor:"#ccd2db",
         loginBgColor:"#fbfcff",
+        pinkColor:"#F2277E",
       },
     },
   },

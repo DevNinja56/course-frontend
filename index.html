@@ -11,63 +11,38 @@
 
     <!-- Navbar Start -->
 
-    <div class="w-full fixed top-0 bg-white z-20">
+    <div class="w-full fixed top-0 bg-white z-40">
         <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto py-6 flex justify-between items-center px-2 2xl:px-8 transition-all duration-300">
             <img src="./assets/images/courseoptionslogo 1.svg"/>
             <div class="flex items-center gap-x-6">
                 <div class="flex items-center gap-x-6">
                     <a href="./screens/FilterPage">
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="./assets/images/discovery.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Discover</p>
-                    </div>
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="./assets/images/discovery.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Discover</p>
+                        </div>
                     </a>
                     <a href="./screens/Compare">
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="./assets/images/Decide.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Compare</p>
-                    </div>
-                </a>
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="./assets/images/Decide.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Compare</p>
+                        </div>
+                    </a>
                     <a href="./screens/Apply">
-                    <div class="flex items-center px-[10px] gap-x-[10px]">
-                        <img src="./assets/images/Apply.svg"/> 
-                        <p class="font-semibold text-textBlackColor">Apply</p>
-                    </div>
-                </a>
+                        <div class="flex items-center px-[10px] gap-x-[10px]">
+                            <img src="./assets/images/Apply.svg"/> 
+                            <p class="font-semibold text-textBlackColor">Apply</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <img src="./assets/images/search.svg"/>
-                    <div class="flex items-center gap-x-3 relative">
-                        <img src="./assets/images/Image-36.svg"/>
-                        <p class="text-lightGrayColor flex gap-x-1 text-[13px]">Daniyal <img onclick="showDropDown()" class="cursor-pointer" src="./assets/images/chevron-down.svg"/></p>
-
-                        <!-- DropDown Start -->
-
-                        <div class="w-[220px] py-2 custom-shadow absolute top-[55px] right-[-8px] bg-white cursor-pointer showDropDown hidden">
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/user-01 (1).svg"/> Profile</p>
-                            </div>
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/Courses (1).svg"/> My Courses</p>
-                            </div>
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/shopping-cart-01.svg"/> My Subscriptions</p>
-                            </div>
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/lock-unlocked-01.svg"/> Setting</p>
-                            </div>
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor mb-2">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/settings-01.svg"/> Change Password</p>
-                            </div>
-                            <hr class="w-full mb-2 border border-borderColor"/>
-                            <div class="w-full py-[9px] pl-[15px] hover:bg-profileBgColor text-lightGrayColor hover:text-darkTextBlueColor">
-                                <p class="flex items-center gap-x-2"><img src="./assets/images/log-out-04.svg"/> Logout</p>
-                            </div>
-                        </div>
-
-                        <!-- DropDown End -->
-
-                    </div>
+                    <a href="./screens/SignIn">
+                    <button class="py-[13px] px-[34px] gap-x-[6px] flex items-center rounded-[5px] bg-blueColor hover:bg-blue-600 text-white text-base font-medium">
+                        <img src="./assets/images/Profile.svg"/>
+                        Login
+                    </button>
+                </a>
                 </div>
             </div>
         </div>
@@ -75,72 +50,424 @@
 
     <!-- Navbar End -->
 
-    <!-- Your Profile Section Start -->
+    <!-- World Largest Course Section Start -->
 
-    <div class="w-full flex items-center justify-between h-[156px] mt-[100px] bg-profileBgColor">
-        <img class="mt-[-150px] ml-[-47px]" src="./assets/images/profileImages/Ellipse 418.svg"/>
-        <h1 class="text-mainTextColor text-[40px] font-bold">Your Profile</h1>
-        <img class="mt-8" src="./assets/images/profileImages/Frame 691.svg"/>
+    <div class="w-full flex items-center mt-[100px] bg-white py-20 relative mb-12">
+        <img class="absolute top-64 left-0" src="./assets/images/Home/homeRound1.svg"/>
+        <img class="absolute top-9 right-[542px]" src="./assets/images/Home/homeRound2.svg"/>
+        <div class="flex justify-between z-10 w-full">
+            <div class="flex flex-col pl-36 pr-12 pt-32">
+            <div class="pr-60 mb-5">
+                <h1 class="text-mainTextColor text-[45px] font-black mb-2">World's Largest Course Search Platform</p>
+                <p class="text-aboutUsTextColor text-[15px] leading-6 aboutUsTextColor mb-5 font-normal">Make your university application stress free and discover in minutes if you'd get into your dream university. Enter your academic profile and get a decision in real time.</p>
+            </div>
+                <div class="rounded-[10px] bg-white custom-shadow p-2 pl-5 z-20">
+                    <div class="bg-white flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <p class="p-[10px] pb-[9px] font-medium text-darkGrayColor text-base w-[130px]">What to Study?</p>
+                                <div class="w-[37px] rotate-[-90deg] border border-textLightBlackColor ml-28"></div>
+                            </div>
+                            <p class="p-[10px] pb-[9px] font-medium text-darkGrayColor text-base w-[130px] ml-5">What to Study?</p>
+                        </div>
+                        <button class="py-4 px-[67px] rounded-[5px] bg-blueColor text-white font-medium text-lg">Search</button>
+                    </div>
+                </div>
+            </div>
+            <img class="absolute top-16 right-16 h-[597px] w-[512px] z-10" src="./assets/images/Home/Home Img.svg"/>
+            <div class="bg-profileBgColor rounded-[10px] relative h-[597px] w-[512px] mt-16">
+            </div>
+        </div>
+        <img class="absolute bottom-24 right-[640px]" src="./assets/images/Home/homeRound3.svg"/>
     </div>
 
-    <!-- Your Profile Section End -->
+    <!-- World Largest Course Section End -->
 
-    <!-- Profile Section Start -->
+    <!-- Top Categories Start -->
 
-    <div class="w-full pb-72">
-        <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300">
-                <div class="flex items-center mb-16">
-                    <a href="./index.html">
-                    <button class="py-[10px] px-[37px] text-white font-bold text-[26px] bg-blueColor">Profile</button>
-                </a>
-                    <a href="./screens/ProfileIntrestingForYou">
-                    <button class="py-[10px] px-[37px] font-bold text-[26px] bg-white text-darkGrayColor">Interesting for you</button>
-                </a>
-                </div>
-                <div class="flex justify-between">
-                    <div class="flex flex-col w-[29.5%]">
-                        <div class="py-[22px] pr-5 bg-profileBgColor text-blueColor border-r-4 border-blueColor flex justify-end">
-                            <p class="text-xl font-semibold">Personal info</p>
-                        </div>
-                        <div class="py-[22px] pr-5 text-mainTextColor border-r-4 border-white flex justify-end w-full">
-                            <p class="text-xl font-semibold">Study Interests</p>
-                        </div>
-                        <div class="py-[22px] pr-5 text-mainTextColor border-r-4 border-white flex justify-end w-full">
-                            <p class="text-xl font-semibold">Budget preference</p>
-                        </div>
-                        <div class="py-[22px] pr-5 text-mainTextColor border-r-4 border-white flex justify-end w-full">
-                            <p class="text-xl font-semibold">Academic background</p>
-                        </div>
-                        <div class="py-[22px] pr-5 text-mainTextColor border-r-4 border-white flex justify-end w-full">
-                            <p class="text-xl font-semibold">English level</p>
-                        </div>
+    <div class="w-full p-10 pb-40 relative">
+        <img class="absolute left-6 bottom-40" src="./assets/images/Home/topCategoryRound1.svg"/>
+        <img class="absolute right-0 top-0" src="./assets/images/Home/topCategoryRound2.svg"/>
+        <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 flex gap-x-8">
+            <div class="pt-16 w-[35%]">
+                <p class="text-blueColor text-[23px] font-bold">Top Categories</p>
+                <h1 class="text-mainTextColor font-extrabold text-[35px] mb-2">Explore our Popular Categories</h1>
+                <p class="text-darkGrayColor text-base mb-7">Pellentesque fringilla, massa sit amet feugiat mollis, leo turpis elementum justo, vel consequat ex urna ut massa maecenas justo sapien.</p>
+                <a href="./screens/Fields">
+                <button class="pt-4 pb-[17px] px-[48px] bg-blueColor rounded-[5px] font-semibold text-white">All Categories</button>
+            </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 z-10 w-[65%]">
+                <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
                     </div>
-                    <div class="flex flex-col gap-y-3 w-[64%]">
-                        <p class="py-[14px] text-[32px] font-semibold">Personal Info</p>
-                        <div class="rounded-[10px] border border-borderColor px-11 pt-11 pb-4 flex flex-col gap-y-6">
-                            <div class="border-b border-personalInfoBorderColor pb-5 flex flex-col gap-y-2 text-mainTextColor">
-                                <p>Name</p>
-                                <h1 class="text-xl font-semibold">Daniyal Samim</h1>
-                            </div>
-                            <div class="border-b border-personalInfoBorderColor pb-5 flex flex-col gap-y-2 text-mainTextColor">
-                                <p>Email</p>
-                                <h1 class="text-xl font-semibold">daniyalsamim@gmail.com</h1>
-                            </div>
-                            <div class="border-b border-personalInfoBorderColor pb-5 flex flex-col gap-y-2 text-mainTextColor">
-                                <p>Phone</p>
-                                <h1 class="text-xl font-semibold">+92 321 5251534</h1>
-                            </div>
-                            <div class="pb-5 flex flex-col gap-y-2 text-mainTextColor">
-                                <p>Address</p>
-                                <h1 class="text-xl font-semibold">Abingdon, Maryland(MD), 21009</h1>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Art & Design</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
                 </div>
+            </a>
+            <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
+                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Marketing</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
+                </div>
+            </a>
+            <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
+                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Business</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
+                </div>
+            </a>
+            <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
+                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Devolopment</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
+                </div>
+            </a>
+            <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
+                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Data Science</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
+                </div>
+            </a>
+            <a href="./screens/Fields">
+                <div class="bg-white rounded-[10px] custom-shadow p-4 pb-7 cursor-pointer border-2 border-white hover:border-blueColor group">
+                    <div class="h-[60px] w-[60px] flex items-center justify-center border-2 border-blueColor rounded-full mb-4">
+                        <img src="./assets/images/Home/download (35).svg"/>
+                    </div>
+                    <h1 class="text-mainTextColor font-bold text-xl mb-6 group-hover:text-blueColor">Marketing</h1>
+                    <p class="text-mainTextColor font-medium text-sm leading-5">Cras ornare sagittis tortor a
+                        facilisis nteger augue
+                        quam, placerat.</p>
+                </div>
+            </a>
+            </div>
         </div>
     </div>
 
-    <!-- Profile Section End -->
+    <!-- Top Categories End -->
+
+    <!-- Intrested Scholarship Section Start -->
+
+    <div class="w-full pb-[500px] 2xl:pb-[680px] flex flex-col items-center overflow-hidden">
+        <p class="text-[23px] font-bold text-blueColor mb-1">Scholarships</p>
+        <h1 class="text-textLightBlackColor text-[48px] font-extrabold mb-5 text-center">Discover Scholarships</h1>
+        <div class="flex relative w-full 2xl:left-56">
+            <a href="./screens/Scholarships">
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[-17.01px] 2xl:left-[-3.01px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="./assets/images/Scholarships/Pic 1.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">19 Scholarships in<br /> Belgium</h1>
+                </div>
+            </div>
+            </div>
+            </a>
+            <a href="./screens/Scholarships">
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[231.93px] 2xl:left-[384.93px] top-[26.76px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                    <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="./assets/images/Scholarships/Pic 2.svg"/>
+                    <div class="h-full flex items-end px-5 pb-5">
+                        <h1 class="text-white text-xl font-black z-10">18 Scholarships in<br /> Austria</h1>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="./screens/Scholarships">
+            <div class="w-[408.68px] 2xl:w-[515.68px] h-[403px] 2xl:h-[499px] absolute left-[515.74px] 2xl:left-[830.74px] z-30 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="./assets/images/Scholarships/Pic 3.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> Australia</h1>
+                </div>
+            </div>
+            </div>
+            </a>
+            <div class="w-[354.35px] 2xl:w-[476.35px] h-[349.34px] 2xl:h-[459.34px] absolute left-[854.68px] 2xl:left-[1309.11px] top-[26.76px] z-20 transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="./assets/images/Scholarships/Pic 4.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">3439 Scholarships in<br /> Canada</h1>
+                </div>
+            </div>
+            </div>
+            <a href="./screens/Scholarships">
+            <div class="w-[287.05px] 2xl:w-[430px] h-[282.99px] 2xl:h-[406.99px] absolute left-[1170.11px] 2xl:left-[1744.11px] top-[60px] transition-all duraton-300">
+                <div class="relative h-full w-full">
+                <img class="h-full w-full rounded-[10px] absolute top-0 left-0" src="./assets/images/Scholarships/Pic 5.svg"/>
+                <div class="h-full flex items-end px-5 pb-5">
+                    <h1 class="text-white text-xl font-black z-10">918 Scholarships in<br /> China</h1>
+                </div>
+            </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Intrested Scholarship Section End -->
+
+    <!-- Our Events Section Start -->
+
+    <div class="w-full p-10 pb-32 relative">
+        <img src="./assets/images/Home/ourEventsRoundImgone.svg" class="absolute left-0 bottom-52"/>
+        <img src="./assets/images/Home/ourEventsRoundImg2.svg" class="absolute right-[70px] top-[275px]"/>
+        <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 flex flex-col items-center">
+            <p class="font-bold text-[23px] text-blueColor mb-3">Our Events</p>
+            <h1 class="font-extrabold text-[48px] text-mainTextColor mb-10">Join our upcoming event</h1>
+            <div class="flex flex-col gap-6 w-full z-10">
+                <div class="pl-1 hover:bg-blueColor transition-all duration-500 rounded-[10px] group">
+                    <div class="bg-white rounded-[10px] custom-shadow px-12 py-3">
+                        <div class="gap-[10px] flex items-center justify-between">
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <h1 class="font-bold text-[36px] text-mainTextColor">02</h1>
+                                    <p class="text-sm text-darkGrayColor">October, 2023</p>
+                                </div>
+                                <hr class="h-[90px] border border-borderColor"/>
+                                <div class="gap-3 flex flex-col">
+                                    <div class="gap-1 flex items-center">
+                                        <img src="./assets/images/Home/Map Point.svg"/>
+                                        <p class="text-sm text-darkGrayColor">New York, US</p>
+                                    </div>
+                                    <h1 class="font-bold text-lg text-mainTextColor group-hover:text-blueColor transition-all duration-500">Global education fall meeting for everyone</h1>
+                                    <div class="flex items-center gap-1">
+                                        <div class="flex">
+                                            <img src="./assets/images/Home/Ellipse 418.svg"/>
+                                            <img src="./assets/images/Home/Ellipse 419.svg"/>
+                                        </div>
+                                        <p class="text-sm font-semibold text-darkGrayColor">David Karry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[25px]">
+                                <button class="rounded-[5px] py-[7px] px-[14px] gap-[6px] hover:gap-[10px] transition-all duration-500 bg-profileBgColor text-blueColor font-medium flex items-center">
+                                    <img src="./assets/images/Home/Clock Circle.svg"/>
+                                    10:30am - 12:30pm
+                                </button>
+                                <button class="rounded-[5px] border border-mainTextColor text-mainTextColor font-medium py-[13px] px-[36px] hover:bg-blueColor hover:text-white hover:border-blueColor">
+                                    View Event
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="pl-1 hover:bg-blueColor transition-all duration-500 rounded-[10px] group">
+                    <div class="bg-white rounded-[10px] custom-shadow px-12 py-3">
+                        <div class="gap-[10px] flex items-center justify-between">
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <h1 class="font-bold text-[36px] text-mainTextColor">02</h1>
+                                    <p class="text-sm text-darkGrayColor">October, 2023</p>
+                                </div>
+                                <hr class="h-[90px] border border-borderColor"/>
+                                <div class="gap-3 flex flex-col">
+                                    <div class="gap-1 flex items-center">
+                                        <img src="./assets/images/Home/Map Point.svg"/>
+                                        <p class="text-sm text-darkGrayColor">New York, US</p>
+                                    </div>
+                                    <h1 class="font-bold text-lg text-mainTextColor group-hover:text-blueColor transition-all duration-500">Global education fall meeting for everyone</h1>
+                                    <div class="flex items-center gap-1">
+                                        <div class="flex">
+                                            <img src="./assets/images/Home/Ellipse 418.svg"/>
+                                            <img src="./assets/images/Home/Ellipse 419.svg"/>
+                                        </div>
+                                        <p class="text-sm font-semibold text-darkGrayColor">David Karry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[25px]">
+                                <button class="rounded-[5px] py-[7px] px-[14px] gap-[6px] hover:gap-[10px] transition-all duration-500 bg-profileBgColor text-blueColor font-medium flex items-center">
+                                    <img src="./assets/images/Home/Clock Circle.svg"/>
+                                    10:30am - 12:30pm
+                                </button>
+                                <button class="rounded-[5px] border border-mainTextColor text-mainTextColor font-medium py-[13px] px-[36px] hover:bg-blueColor hover:text-white hover:border-blueColor">
+                                    View Event
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="pl-1 hover:bg-blueColor transition-all duration-500 rounded-[10px] group">
+                    <div class="bg-white rounded-[10px] custom-shadow px-12 py-3">
+                        <div class="gap-[10px] flex items-center justify-between">
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <h1 class="font-bold text-[36px] text-mainTextColor">02</h1>
+                                    <p class="text-sm text-darkGrayColor">October, 2023</p>
+                                </div>
+                                <hr class="h-[90px] border border-borderColor"/>
+                                <div class="gap-3 flex flex-col">
+                                    <div class="gap-1 flex items-center">
+                                        <img src="./assets/images/Home/Map Point.svg"/>
+                                        <p class="text-sm text-darkGrayColor">New York, US</p>
+                                    </div>
+                                    <h1 class="font-bold text-lg text-mainTextColor group-hover:text-blueColor transition-all duration-500">Global education fall meeting for everyone</h1>
+                                    <div class="flex items-center gap-1">
+                                        <div class="flex">
+                                            <img src="./assets/images/Home/Ellipse 418.svg"/>
+                                            <img src="./assets/images/Home/Ellipse 419.svg"/>
+                                        </div>
+                                        <p class="text-sm font-semibold text-darkGrayColor">David Karry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[25px]">
+                                <button class="rounded-[5px] py-[7px] px-[14px] gap-[6px] hover:gap-[10px] transition-all duration-500 bg-profileBgColor text-blueColor font-medium flex items-center">
+                                    <img src="./assets/images/Home/Clock Circle.svg"/>
+                                    10:30am - 12:30pm
+                                </button>
+                                <button class="rounded-[5px] border border-mainTextColor text-mainTextColor font-medium py-[13px] px-[36px] hover:bg-blueColor hover:text-white hover:border-blueColor">
+                                    View Event
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="pl-1 hover:bg-blueColor transition-all duration-500 rounded-[10px] group">
+                    <div class="bg-white rounded-[10px] custom-shadow px-12 py-3">
+                        <div class="gap-[10px] flex items-center justify-between">
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <h1 class="font-bold text-[36px] text-mainTextColor">02</h1>
+                                    <p class="text-sm text-darkGrayColor">October, 2023</p>
+                                </div>
+                                <hr class="h-[90px] border border-borderColor"/>
+                                <div class="gap-3 flex flex-col">
+                                    <div class="gap-1 flex items-center">
+                                        <img src="./assets/images/Home/Map Point.svg"/>
+                                        <p class="text-sm text-darkGrayColor">New York, US</p>
+                                    </div>
+                                    <h1 class="font-bold text-lg text-mainTextColor group-hover:text-blueColor transition-all duration-500">Global education fall meeting for everyone</h1>
+                                    <div class="flex items-center gap-1">
+                                        <div class="flex">
+                                            <img src="./assets/images/Home/Ellipse 418.svg"/>
+                                            <img src="./assets/images/Home/Ellipse 419.svg"/>
+                                        </div>
+                                        <p class="text-sm font-semibold text-darkGrayColor">David Karry</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[25px]">
+                                <button class="rounded-[5px] py-[7px] px-[14px] gap-[6px] hover:gap-[10px] transition-all duration-500 bg-profileBgColor text-blueColor font-medium flex items-center">
+                                    <img src="./assets/images/Home/Clock Circle.svg"/>
+                                    10:30am - 12:30pm
+                                </button>
+                                <button class="rounded-[5px] border border-mainTextColor text-mainTextColor font-medium py-[13px] px-[36px] hover:bg-blueColor hover:text-white hover:border-blueColor">
+                                    View Event
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Events Section End -->
+
+    <!-- Why choose us section start -->
+
+    <div class="bg-profileBgColor py-[35px] px-9 flex items-center justify-between gap-5 relative">
+        <img class="absolute right-6 top-16" src="./assets/images/Home/whychooseusroundimg2.svg"/>
+        <img class="w-[600px] md:w-[500px] xl:w-[756px]" src="./assets/images/Home/why choose us mainImg.svg"/>
+        <div class="flex flex-col pr-16">
+            <h1 class="text-mainTextColor text-[40px] font-extrabold mb-5">Why Choose Us?</h1>
+            <p class="text-darkGrayColor mb-10 text-[15px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="flex flex-col gap-y-5 mb-12">
+                <div class="flex items-center gap-3">
+                    <div class="bg-purpleColor flex items-center justify-center h-[32px] w-[32px] rounded-full">
+                        <img src="./assets/images/Home/check.svg"/>
+                    </div>
+                    <p class="font-medium text-darkGrayColor">There are many variations of passages of Lorem Ipsum.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-pinkColor flex items-center justify-center h-[32px] w-[32px] rounded-full">
+                        <img src="./assets/images/Home/check.svg"/>
+                    </div>
+                    <p class="font-medium text-darkGrayColor">There are many variations of passages of Lorem Ipsum.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-blueColor flex items-center justify-center h-[32px] w-[32px] rounded-full">
+                        <img src="./assets/images/Home/check.svg"/>
+                    </div>
+                    <p class="font-medium text-darkGrayColor">There are many variations of passages of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <button class="py-[17px] px-[48px] rounded-[5px] bg-blueColor text-white font-semibold text-lg hover:bg-blue-600 w-fit">More Details</button>
+        </div>
+    </div>
+
+    <!-- Why choose us section end -->
+
+    <!-- Testimonal Section Start -->
+
+    <div class="bg-testimonalBgColor pb-60">
+    <div class="relative pb-0">
+    <img class="absolute bottom-0 left-8" src="./assets/images/Blogs/Ellipse 426.svg"/>
+    <div class="flex justify-between items-start max-w-[1100px] 2xl:max-w-[2300px] mx-auto px-2 2xl:px-8 transition-all duration-300 py-44 gap-x-16">
+        <div class="flex flex-col gap-y-2 z-10 relative">
+            <p class="font-bold text-[23px] text-blueColor">Testimonial</p>
+            <h1 style="line-height: 57.6px;" class="text-[40px] font-extrabold text-mainTextColor w-[340px] mb-2">See What OurClient Say’s</h1>
+            <p class="text-darkGrayColor text-sm w-[559px]">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+            <img class="absolute top-7 right-6" src="./assets/images/Messages.svg"/>
+        </div>
+        <div class="flex flex-col items-center gap-y-7">
+        <div class="bg-white rounded-[10px] py-5 px-5 pr-6 flex flex-col gap-y-4 custom-shadow z-10">
+            <div class="flex gap-x-5">
+                <img src="./assets/images/Blogs/testimoanlals.svg"/>
+                <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="font-bold text-xl text-mainTextColor">David Karry</h1>
+                        <p class="font-medium text-blueColor">Web Developer</p>
+                    </div>
+                    <img src="./assets/images/Blogs/“.svg"/>
+                </div>
+            </div>
+            <p class="text-grayColor text-sm mb-1">Curabitur tristique, sem id sagittis varius, lacus ligula mollis dui, ac condimentum felis metus ut nulla. Aenean ut ultricies turpis, sed sollicitudin eros. Aliquam quis dui ut diam lobortis dignissim ut aliquet ex</p>
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+            <div class="px-6 rotate-0 rounded-[10px] border-4 border-blueColor"></div>
+            <div class="px-4 rotate-[-0deg] rounded-[10px] border-4 border-grayBorderColor"></div>
+        </div>
+    </div>
+    </div>
+    <img class="absolute right-0 top-[-120px]" src="./assets/images/Home/testimoalRoundImg.svg"/>
+</div>
+</div>
+
+    <!-- Testimonal Section End -->
 
     <!-- Footer Start -->
 
@@ -151,8 +478,8 @@
                 <div class="z-10 w-full flex items-center font-black px-20 pt-16 justify-between h-auto 2xl:h-[420px]">
                     <h1 class="text-white text-4xl lg:text-5xl">Want to study at Online<br /> program ?</h1>
                     <a href="./screens/Apply">
-                    <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
-                </a>
+                        <button class="bg-white py-4 lg:py-[21px] px-8 lg:px-[51px] rounded-[5px] text-mainTextColor">Apply Now</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -192,13 +519,13 @@
                     <li class="pt-[9px] pb-[10px]">Agents CRM</li>
                     <li class="pt-[9px] pb-[10px]">Find Consultants</li>
                     <a href="./screens/Universities">
-                    <li class="pt-[9px] pb-[10px]">Find Institutions</li>
-                </a>
-                <a href="./screens/Fields">
-                    <li class="pt-[9px] pb-[10px]">Find Courses</li>
+                        <li class="pt-[9px] pb-[10px]">Find Institutions</li>
+                    </a>
+                    <a href="./screens/Fields">
+                        <li class="pt-[9px] pb-[10px]">Find Courses</li>
                     </a>
                     <a href="./screens/Countries">
-                    <li class="pt-[9px] pb-[10px]">Find Country</li>
+                        <li class="pt-[9px] pb-[10px]">Find Country</li>
                     </a>
                 </ul>
             </div>
@@ -206,8 +533,8 @@
                 <h1 class="pt-[15px] pb-4 text-textLightBlackColor text-lg font-extrabold">SUPPORT</h1>
                 <ul class="text-lightGrayColor">
                     <a href="./screens/AboutUs"><li class="pt-[9px] pb-[10px]">About Us</li></a>
-                    <a href="./screens/"><li class="pt-[9px] pb-[10px]">Contact Us</li></a>
-                    <a href="./screens/"><li class="pt-[9px] pb-[10px]">FAQ's</li></a>
+                    <a href="./screens/ContactUs"><li class="pt-[9px] pb-[10px]">Contact Us</li></a>
+                    <a href="./screens/FAQs"><li class="pt-[9px] pb-[10px]">FAQ's</li></a>
                     <a href="./screens/PrivacyPolicy"><li class="pt-[9px] pb-[10px]">Privacy Policy</li></a>
                     <a href="./screens/T&C"><li class="pt-[9px] pb-[10px]">Terms and Condition</li></a>
                     <a href="./screens/Blog"><li class="pt-[9px] pb-[10px]">Blogs</li></a>
