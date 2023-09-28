@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../dist/output.css">
     <script defer src="../../main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,7 +16,9 @@
 
     <div class="w-full fixed top-0 bg-white z-40">
         <div class="max-w-[1100px] 2xl:max-w-[2300px] mx-auto py-6 flex justify-between items-center px-2 2xl:px-8 transition-all duration-300">
-            <img src="../../assets/images/courseoptionslogo 1.svg"/>
+            <a href="../../index.html">
+                <img src="../../assets/images/courseoptionslogo 1.svg"/>
+            </a>
             <div class="flex items-center gap-x-6">
                 <div class="flex items-center gap-x-6">
                     <a href="../FilterPage">
@@ -89,48 +94,103 @@
                         </div>
                         <div class="flex flex-col gap-y-1 h-[360px] overflow-hidden overflow-y-auto setScrollBar">
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Australia (918)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Austria (18)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">China (29)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">China (29)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Denmark (3)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Denmark (3)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Hungary (9)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Hungary (9)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Austria (18)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Austria (18)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Azerbaijan (1)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
                             </div>
                         </div>
                     </div>
@@ -142,49 +202,99 @@
                     <div class="flex flex-col gap-y-1">
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
                             <div class="flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Undergradute (644)</p>
                         </div>
                         <img src="../../assets/images/Scholarships/chevron-right.svg"/>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Bachelors (605)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Top Up Degree (0)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Associate Degree (1)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Advanced Diploma (0)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Higher National Diploma (0)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Diploma (30)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-9 group flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                            <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Certificate (2)</p>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
                             <div class="flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Postgradute (528)</p>
                         </div>
                         <img src="../../assets/images/Scholarships/chevron-right.svg"/>
                         </div>
                         <div class="w-full p-[6px] hover:bg-profileBgColor px-4 group flex justify-between items-center">
                             <div class="flex gap-x-2">
-                            <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
                             <p class="text-sm text-grayColor group-hover:text-blueColor">Postgradute by Research (170)</p>
                         </div>
                         <img src="../../assets/images/Scholarships/chevron-right.svg"/>
@@ -201,47 +311,102 @@
                         </div>
                         <div class="flex flex-col gap-y-1 h-[360px] overflow-hidden overflow-y-auto setScrollBar">
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Tourism & Hospitality (418)</p>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/> 
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Tourism & Hospitality (418)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Architecture (406)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Social & Behavioural Science (440)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Law (448)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Health & Medicine (470)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Physical Science & Math (485)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Life Sciences (504)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Engineering & Technology (514)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Business & Management (519)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Belgium (19)</p>
                             </div>
                         </div>
@@ -256,32 +421,67 @@
                         </div>
                         <div class="flex flex-col gap-y-1">
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Sports (1)</p>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/> 
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Sports (1)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Organisational (9)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">Merit (81)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Entrance (32)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Entrance (32)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Need (19)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Need (19)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Government (47)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Government (47)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">Academic (729)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">Academic (729)</p>
                             </div>
                         </div>
                     </div>
@@ -295,32 +495,67 @@
                         </div>
                         <div class="flex flex-col gap-y-1">
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">January (24)</p>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/> 
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">January (24)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">February (11)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">March (44)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">April (33)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">April (33)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">May (56)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">May (56)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">June (42)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">June (42)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">July (54)</p>
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">July (54)</p>
                             </div>
                         </div>
                     </div>
@@ -334,19 +569,40 @@
                         </div>
                         <div class="flex flex-col gap-y-1">
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
-                                <p class="text-sm text-grayColor group-hover:text-blueColor">2023 (206)</p>
+
+                                <label class="relative flex items-center">
+                                <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>
+                            <p class="text-sm text-grayColor group-hover:text-blueColor">2023 (206)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_2" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">2024 (9)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_3" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">2030 (2)</p>
                             </div>
                             <div class="w-full p-[6px] hover:bg-profileBgColor px-4 flex gap-x-2 group">
-                                <input name="input_box_4" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor checked:border-transparent checked:text-white"/>
+                                <label class="relative flex items-center">
+                                    <input name="input_box_1" type="checkbox" class="h-5 w-5 rounded-[2px] border border-borderColor cursor-pointer pb-0 group-hover:border-blueColor appearance-none checked:bg-blueColor"/>
+                                    <svg class="absolute left-1 cursor-pointer" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4L4 8.5L12 1" class="stroke-white cursor-pointer" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </label>
                                 <p class="text-sm text-grayColor group-hover:text-blueColor">2022 (44)</p>
                             </div>
                         </div>
